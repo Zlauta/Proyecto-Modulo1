@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+.dropdown-menu {
+  background-color: rgb(115, 104, 104);
+  color: white;
+}
+.boton{
+    padding-right: 10px;
+}
