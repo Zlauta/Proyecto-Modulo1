@@ -1,6 +1,6 @@
 :root {
-  --principal-bg: linear-gradient( -65deg, orange, rgb(25, 19, 0), black);
-  --sombras-text:1px 1px 3px orange;
+  --principal-bg: linear-gradient(45deg, orange, rgb(25, 19, 0), black);
+  --sombras-text: 1px 1px 3px rgb(250, 174, 33);
 }
 @keyframes fadeInUp {
   from {
@@ -12,26 +12,109 @@
     transform: translateY(0);
   }
 }
+@keyframes pullUpCard {
+  to {
+    transform: perspective(600px) translateY(-20px) scale(1.1) rotateX(-5deg);
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.357);
+  }
+}
+
+@keyframes badge {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+
+  10% {
+    transform: rotate(2deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  90% {
+    transform: rotate(2deg);
+  }
+}
+@keyframes wobble {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+.modal-body {
+  backdrop-filter: blur(16px) saturate(180%);
+  background: var(--principal-bg);
+}
+.card {
+  animation: fadeInUp 1 0.1s ease forwards;
+  animation-delay: 0.3s;
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  transition: transform 0.3s ease;
+  transform-origin: bottom center;
+}
+
+.card:hover {
+  cursor: pointer;
+  animation: pullUpCard 0.3s forwards;
+}
 
 .cardAnimada {
-  animation: fadeInUp 0.8s ease forwards;
-  animation-delay: 0.3s;
+  animation: wobble 1s ease 500ms 1 normal ;
+  animation-fill-mode: none ;
+}
+.card-body {
+  text-shadow: var(--sombras-text);
 }
 
-
-
-.card-body{
-    background: var(--principal-bg);
-     text-shadow: var(--sombras-text);
+.badge {
+  animation: badge 2s ease-in-out 0s infinite normal none;
 }
 
-.modalbg{
-    background: var(--principal-bg)
+.modalbg {
+  background: var(--principal-bg);
 }
-.modalbg .row{
-    display: flex;
-    flex-wrap:wrap ;
+.modalbg .row {
+  display: flex;
+  flex-wrap: wrap;
 }
-.modalbg .col-12{
-    display: flex;
+.modalbg .col-12 {
+  display: flex;
 }
