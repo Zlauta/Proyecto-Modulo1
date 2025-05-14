@@ -20,23 +20,15 @@
     <!-- NAVBAR -->
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container-fluid logoNav">
+          <!-- Cambiar logo de página y hacerlo responsive -->
           <img
             src="https://static.vecteezy.com/system/resources/previews/019/167/102/non_2x/netflix-transparent-free-download-free-png.png"
             alt="imagen de netflix"
-            class="img"
           />
-          <!-- Botón para abrir el modal -->
-          <button
-            type="button"
-            class="btn btn-warning"
-            data-bs-toggle="modal"
-            data-bs-target="#planModal"
-          >
-            Ver planes
-          </button>
+          <!-- No se muestra el menú hamburguesa -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
               <li class="nav-item"></li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Inicio</a>
@@ -47,6 +39,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Servicio</a>
               </li>
+              <!-- Agregar Input de búsqueda -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
