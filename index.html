@@ -11,30 +11,24 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <!-- NAVBAR -->
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container-fluid logoNav">
+          <!-- Cambiar logo de página y hacerlo responsive -->
           <img
             src="https://static.vecteezy.com/system/resources/previews/019/167/102/non_2x/netflix-transparent-free-download-free-png.png"
             alt="imagen de netflix"
-            class="img"
           />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <!-- No se muestra el menú hamburguesa -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
               <li class="nav-item"></li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Inicio</a>
@@ -45,6 +39,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Servicio</a>
               </li>
+              <!-- Agregar Input de búsqueda -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -66,14 +61,15 @@
                 <a class="nav-link" href="#">Contacto</a>
               </li>
               <li class="boton">
-                <button
-                  type="button"
-                  class="btn btn-outline-secondary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Inscribirse
-                </button>
+                <!-- Botón para abrir el modal -->
+          <button
+          type="button"
+          class="btn btn-warning"
+          data-bs-toggle="modal"
+          data-bs-target="#planModal"
+        >
+          Ver planes
+        </button>
               </li>
               <li>
                 <button
@@ -81,7 +77,6 @@
                   class="btn btn-outline-secondary"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
-                  
                 >
                   Acceso
                 </button>
@@ -91,44 +86,6 @@
         </div>
       </nav>
     </header>
-    <div>
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Modal title
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">...</div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- CONTENIDO PRINCIPAL -->
     <main>
       <!-- banner -->
@@ -146,7 +103,9 @@
             />
             <div class="carousel-caption p-0">
               <h4>Avenger infinity Wars</h4>
-              <a href="" class="btn btn-dark p-1 px-lg-5">Ver Pelicula</a>
+              <a href="./pages/detalleA.html" class="btn btn-dark p-1 px-lg-5"
+                >Ver Pelicula</a
+              >
               <p class="d-none d-md-block p-2 rounded-2 m-3 bg-black">
                 Superheroes • +13 • 143 MIN
               </p>
@@ -282,7 +241,7 @@
         <p class="text-center text-light mt-5 h2">Terror</p>
         <div class="contendorCarrusel">
           <div class="funcionCarrusel">
-            <div class="tarjetaCarusel">
+            <div class="tarjetaCarusel" style="--position: 1">
               <a href=""
                 ><img
                   src="https://th.bing.com/th/id/OIP.-I-6Os5nAc80Fyr7O7DcJQHaLE?w=184&h=275&c=7&r=0&o=5&cb=iwc2&pid=1.7"
@@ -290,35 +249,35 @@
                 />
               </a>
             </div>
-            <div class="tarjetaCarusel">
+            <div class="tarjetaCarusel" style="--position: 2">
               <a href=""
                 ><img
                   src="https://media.diariopopular.com.ar/p/9177963b4cef3185b843056f504175f6/adjuntos/143/imagenes/005/499/0005499547/posters-hw-3_resultjpg.jpg"
                   alt="portada de luciferina"
               /></a>
             </div>
-            <div class="tarjetaCarusel">
+            <div class="tarjetaCarusel" style="--position: 3">
               <a href=""
                 ><img
                   src="https://www.clara.es/medio/2022/09/29/peliculas-de-miedo-netflix_9b43d96e_1000x1500.jpg"
                   alt="portada de no respires"
               /></a>
             </div>
-            <div class="tarjetaCarusel">
+            <div class="tarjetaCarusel" style="--position: 4">
               <a href=""
                 ><img
                   src="https://i.pinimg.com/originals/8d/8b/b3/8d8bb3910561efcbd1f08da01f4cb6d3.jpg"
                   alt="portada del exorcista"
               /></a>
             </div>
-            <div class="tarjetaCarusel">
+            <div class="tarjetaCarusel" style="--position: 5">
               <a href=""
                 ><img
                   src="https://i.pinimg.com/originals/9d/7f/ca/9d7fcab553d191fbfb3ace6d4a9e1327.jpg"
                   alt="portada de insidious"
               /></a>
             </div>
-            <div class="tarjetaCarusel">
+            <div class="tarjetaCarusel" style="--position: 6">
               <a href=""
                 ><img
                   src="https://espectadores.net/wp-content/uploads/2015/06/Scream-3.jpg"
@@ -569,10 +528,10 @@
               /></a>
             </div>
             <div class="tarjetaCarusel">
-              <a href=""
+              <a href="./pages/detalleG.html"
                 ><img
-                  src="https://es.web.img2.acsta.net/pictures/19/12/17/15/08/2885570.jpg"
-                  alt="portada de el misterio del dragon"
+                  src="https://tse3.mm.bing.net/th/id/OIP.gpoVFAyUAbnmDN33iBRRdgHaLH?cb=iwc2&rs=1&pid=ImgDetMain"
+                  alt="portada de game of thrones"
               /></a>
             </div>
             <div class="tarjetaCarusel">
@@ -612,10 +571,10 @@
               /></a>
             </div>
             <div class="tarjetaCarusel">
-              <a href=""
+              <a href="./pages/detalleG.html"
                 ><img
-                  src="https://es.web.img2.acsta.net/pictures/19/12/17/15/08/2885570.jpg"
-                  alt="portada de el misterio del dragon"
+                  src="https://tse3.mm.bing.net/th/id/OIP.gpoVFAyUAbnmDN33iBRRdgHaLH?cb=iwc2&rs=1&pid=ImgDetMain"
+                  alt="portada de game of thrones"
               /></a>
             </div>
             <div class="tarjetaCarusel">
@@ -646,6 +605,147 @@
                   alt="portada de spark"
               /></a>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL DE SUSCRIPCION Y LOGIN -->
+      <section
+        class="modal fade generalModalbg"
+        id="planModal"
+        tabindex="-1"
+        aria-labelledby="planModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content text-white bg-transparent">
+            <!--Body de modal  -->
+            <section class="modal-body pe-4 ps-4">
+              <div class="closeButtonModal d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-outline-warning mb-3 bi bi-x"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+              <div class="row mt-3">
+                <!-- Estándar -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="modalCard card border-white text-white w-100 d-flex flex-column h-100 cardAnimada"
+                  >
+                    <div class="card-body  p-2 d-flex flex-column modalCardInner">
+                      
+                        <h5 class="card-title mt-3 text-center mb-5">
+                          Estándar
+                        </h5>
+                        <p class="card-text mb-5">
+                          Disfrutá de contenido en calidad estándar sin
+                          interrupciones.
+                        </p>
+                        <ul class="list-unstyled mb-5">
+                          <li>
+                            <i class="bi bi-patch-check text-primary"></i>
+                            Resolución hasta 720p
+                          </li>
+                          <li>
+                            <i class="bi bi-patch-check text-primary"></i> 1
+                            dispositivo a la vez
+                          </li>
+                          <li>
+                            <i class="bi bi-patch-check text-primary"></i>
+                            Catálogo limitado
+                          </li>
+                        </ul>
+                        <button class="btn btn-outline-primary w-100 mt-auto">
+                          Suscribirse
+                        </button>
+                      
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Premium -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="card modalCard border-success text-white w-100 d-flex flex-column h-100 position-relative cardAnimada"
+                  >
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 ms-0"
+                      >Más popular</span
+                    >
+                    <div class="card-body modalCardInner p-2 d-flex flex-column">
+                      <h5 class="card-title mt-3 text-success text-center mb-5">
+                        Premium
+                      </h5>
+                      <p class="card-text mb-5">
+                        Ideal para familias o usuarios exigentes. Más calidad,
+                        más dispositivos.
+                      </p>
+                      <ul class="list-unstyled mb-5">
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Resolución hasta 1080p
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i> Hasta 3
+                          dispositivos
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Catálogo completo
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Descargas offline
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-success w-100 mt-auto">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Deluxe -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="card modalCard border-warning text-white w-100 d-flex flex-column h-100 cardAnimada"
+                  >
+                    <div class="card-body modalCardInner p-2 d-flex flex-column">
+                      <h5 class="card-title mt-3 text-warning text-center mb-5">
+                        Deluxe
+                      </h5>
+                      <p class="card-text mb-5">
+                        La experiencia definitiva. Lo mejor de lo mejor, sin
+                        límites.
+                      </p>
+                      <ul class="list-unstyled mb-5">
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Resolución 4K + HDR
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Dispositivos ilimitados
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Catálogo exclusivo y estrenos anticipados
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Soporte prioritario 24/7
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-warning w-100 mt-auto">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
           </div>
         </div>
       </section>
