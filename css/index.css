@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
 }
-img {
+.logoNav img {
   width: 100px;
   height: 100px;
 }
@@ -16,6 +16,9 @@ img {
 }
 .boton {
   padding-right: 10px;
+}
+.nombreDelProyecto{
+  color: white;
 }
 
 body {
@@ -219,5 +222,11 @@ body {
       width: 80%;
       margin-left: 20px;
     }
+  }
+}
+@media (min-width: 768px){
+  .nav-item{
+    justify-content: space-between;
+    display: none;
   }
 }
