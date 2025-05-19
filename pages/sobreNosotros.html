@@ -17,8 +17,107 @@
     <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
-    <header>
-      <!-- Agregar header actualizado -->
+    <!-- NAVBAR -->
+    <header id="Header" class="position-sticky sticky-top">
+      <nav class="navbar navbar-expand-xl navbar-dark bg-black">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+              <div class="wrapper">
+                <svg>
+                  <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                    One Play Group
+                  </text>
+                </svg>
+              </div>
+            </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-danger" href="#"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../index.html">Terror</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html"
+                      >Comedia</a
+                    >
+                  </li>
+                   <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html">Accion</a>
+                  </li>
+                   <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html"
+                      >Aventuras</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-search me-3"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <!-- Botón para abrir el modal -->
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#planModal"
+                >
+                  Ver planes
+                </button>
+              </li>
+              <li class="nav-item ps-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Acceso
+                </button>
+              </li>
+              <!-- -------------------- -->
+
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- CONTENIDO PRINCIPAL -->
     <main class="bg-transparent text-light">
@@ -195,8 +294,8 @@
 
                 <div class="col">
                   <a
-                    class="btn
-                    target="_blank" btn-outline-info w-100 d-flex align-items-center justify-content-center gap-1"
+                    class="btn btn-outline-info w-100 d-flex align-items-center justify-content-center gap-1"
+                    target="_blank" 
                     href="../pages/error404.html"
                     ><i class="bi bi-envelope"></i> Email
                   </a>

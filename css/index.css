@@ -70,6 +70,10 @@ svg text {
 .navbar{
    font-family: "Shojumaru", sans-serif;
 }
+.dropdown-menu {
+  background-color: rgb(115, 104, 104);
+  color: white;
+}
 /* ---------- */
 
 
@@ -223,6 +227,8 @@ svg text {
   backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.75);
   height: 100%;
+  font-family: "Shojumaru", sans-serif;
+  color: gainsboro;
 }
 .cardAnimada {
   animation: wobble 1s ease 500ms 1 normal;
