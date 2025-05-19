@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
 }
+
 .logoNav img {
   width: 100px;
   height: 100px;
@@ -40,7 +41,13 @@ body {
 .carousel-item {
   img {
     border: 1px solid rgba(255, 255, 255, 0.459);
+    height: 250px;
   }
+}
+/* grilla de peliculas destacadas */
+
+.contImg {
+  width: 40% !important;
 }
 
 /* carrusel de categorias */
@@ -295,26 +302,29 @@ body {
 }
 
 /* medias query */
+
+@media (min-width: 768px) {
+  .carousel-item {
+    img {
+      height: 400px;
+    }
+  }
+  .contImg {
+    width: 25% !important;
+  }
+}
+
 @media (min-width: 1024px) {
   .carousel-item {
     img {
-      height: 95vh;
+      height: 77vh;
     }
     h4 {
       font-size: 70px;
     }
   }
-}
-
-@media (max-width: 760px) {
-  .grillaPD {
-    img {
-      width: 100%;
-    }
-    div {
-      width: 80%;
-      margin-left: 20px;
-    }
+  .contImg {
+    width: 20% !important;
   }
 }
 @media (min-width: 768px){
