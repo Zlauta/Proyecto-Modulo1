@@ -18,8 +18,109 @@
     />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <header></header>
+   <!-- NAVBAR -->
+    <header id="Header" class="position-sticky sticky-top">
+      <nav class="navbar navbar-expand-xl navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="wrapper">
+              <svg>
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                  One Play Group
+                </text>
+              </svg>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobreNosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../index.html">Terror</a>
+                  </li>
+
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html"
+                      >Comedia</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+
+                  <li>
+                    <a class="dropdown-item" href="../index.html">Accion</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html"
+                      >Aventuras</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-danger" href="./error404.html">
+                  <i class="bi bi-search me-3"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <!-- Botón para abrir el modal -->
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#planModal"
+                >
+                  Ver planes
+                </button>
+              </li>
+              <li class="nav-item ps-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Acceso
+                </button>
+              </li>
+              <!-- -------------------- -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- CONTENIDO PRINCIPAL -->
     <main>
       <section class="row m-0">
@@ -29,7 +130,7 @@
           </video>
           <div class="tituloEpisodio col-12 d-flex flex-column">
             <h2 class="titulo">Avenger Infinity Wars</h2>
-            <a href="" class="boton btn btn-danger px-5">
+            <a href="" class="boton p-2 w-75 rounded-2 text-decoration-none">
               <i class="bi bi-play-fill"></i> <strong>Reproducir</strong>
             </a>
           </div>
@@ -172,6 +273,149 @@
                   alt="portada de daredevil born again"
               /></a>
             </div>
+          </div>
+        </div>
+      </section>
+       <!-- MODAL DE SUSCRIPCION Y LOGIN -->
+      <section
+        class="modal fade generalModalbg"
+        id="planModal"
+        tabindex="-1"
+        aria-labelledby="planModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content text-white bg-transparent">
+            <!--Body de modal  -->
+            <section class="modal-body pe-4 ps-4">
+              <div class="closeButtonModal d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-outline-warning mb-3 bi bi-x"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+              <div class="row mt-3">
+                <!-- Estándar -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="modalCard card border-white text-white w-100 d-flex flex-column h-100 cardAnimada"
+                  >
+                    <div
+                      class="card-body p-2 d-flex flex-column modalCardInner"
+                    >
+                      <h5 class="card-title mt-3 text-center mb-5">Estándar</h5>
+                      <p class="card-text mb-5">
+                        Disfrutá de contenido en calidad estándar sin
+                        interrupciones.
+                      </p>
+                      <ul class="list-unstyled mb-5">
+                        <li>
+                          <i class="bi bi-patch-check text-primary"></i>
+                          Resolución hasta 720p
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-primary"></i> 1
+                          dispositivo a la vez
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-primary"></i>
+                          Catálogo limitado
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-primary w-100 mt-auto">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Premium -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="card modalCard border-success text-white w-100 d-flex flex-column h-100 position-relative cardAnimada"
+                  >
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 ms-0"
+                      >Más popular</span
+                    >
+                    <div
+                      class="card-body modalCardInner p-2 d-flex flex-column"
+                    >
+                      <h5 class="card-title mt-3 text-success text-center mb-5">
+                        Premium
+                      </h5>
+                      <p class="card-text mb-5">
+                        Ideal para familias o usuarios exigentes. Más calidad,
+                        más dispositivos.
+                      </p>
+                      <ul class="list-unstyled mb-5">
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Resolución hasta 1080p
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i> Hasta 3
+                          dispositivos
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Catálogo completo
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Descargas offline
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-success w-100 mt-auto">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Deluxe -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="card modalCard border-warning text-white w-100 d-flex flex-column h-100 cardAnimada"
+                  >
+                    <div
+                      class="card-body modalCardInner p-2 d-flex flex-column"
+                    >
+                      <h5 class="card-title mt-3 text-warning text-center mb-5">
+                        Deluxe
+                      </h5>
+                      <p class="card-text mb-5">
+                        La experiencia definitiva. Lo mejor de lo mejor, sin
+                        límites.
+                      </p>
+                      <ul class="list-unstyled mb-5">
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Resolución 4K + HDR
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Dispositivos ilimitados
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Catálogo exclusivo y estrenos anticipados
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Soporte prioritario 24/7
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-warning w-100 mt-auto">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
           </div>
         </div>
       </section>
