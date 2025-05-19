@@ -13,17 +13,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Shojumaru", sans-serif;
 }
 
 body {
-  background: #000000;
-  background: linear-gradient(
-    140deg,
-    rgb(0, 0, 0, 0.7) 0%,
-    rgb(255, 174, 0) 50%,
-    rgb(0, 0, 0, 0.7) 100%
-  );
+  background: var(--principal-bg);
+  text-shadow: var(--sombras-text);
 }
 /* Logo de navbar */
 svg {
@@ -34,7 +28,7 @@ svg {
 svg text {
   animation: stroke 4s infinite alternate;
   stroke-width: 2;
-  stroke: #D10000;
+  stroke: #d10000;
   font-size: 25px;
 }
 @keyframes stroke {
@@ -52,7 +46,7 @@ svg text {
   }
   80% {
     fill: rgba(255, 0, 0, 1);
-    stroke: rgba(235,111,16,1);
+    stroke: rgba(235, 111, 16, 1);
     stroke-width: 3;
   }
 
@@ -68,16 +62,14 @@ svg text {
   background: none;
 }
 /* nav-bar */
-.navbar{
-   font-family: "Shojumaru", sans-serif;
+.navbar {
+  font-family: "Shojumaru", sans-serif;
 }
 .dropdown-menu {
   background-color: rgb(115, 104, 104);
   color: white;
 }
 /* ---------- */
-
-
 
 /* portada */
 .carousel-item {
@@ -345,7 +337,7 @@ svg text {
   transition: text-shadow 0.5s ease, color 0.5s ease;
 }
 
-footer{
+footer {
   font-family: "shojumaru", sans-serif;
 }
 /* medias query */
