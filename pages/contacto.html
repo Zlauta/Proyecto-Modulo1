@@ -155,7 +155,7 @@
             <form class="d-flex flex-column mb-4 needs-validation" novalidate>
               <div class="container mb-3">
                 <label for="validationCustom01" class="form-label"
-                  >First name</label
+                  >nombre</label
                 >
                 <input
                   type="text"
@@ -169,7 +169,7 @@
 
               <div class="container mb-3">
                 <label for="validationCustom02" class="form-label"
-                  >Last name</label
+                  >apellido</label
                 >
                 <input
                   type="text"
@@ -210,18 +210,18 @@
                   <option>3</option>
                   <option>4</option>
                 </select>
-                <div class="invalid-feedback">Please select a valid state.</div>
+                <div class="invalid-feedback"></div>
               </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Dejar un mensaje</label
-                >
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                ></textarea>
-              </div>
+
+               <form class="was-validated">
+  <div class="mb-3">
+    <label for="validationTextarea" class="form-label">dejar tu  mensaje </label>
+    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="dejar un mensaje sobre la ap " required>
+    </textarea>
+    <div class="invalid-feedback">
+      dejar tu mensaje 
+    </div>
+  </div>
 
               <div class="container mb-3">
                 <button class="btn btn-danger" type="submit">
