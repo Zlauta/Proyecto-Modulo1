@@ -91,9 +91,9 @@
     <main>
       <section class="row m-0 p-0">
         <!-- lado izquierdo  -->
-        <section class="col-md-5 col-md-4">
+        <section class="col-md-6 col-md-4">
           <div class="container d-flex justify-content-center">
-            <div class="card bg-dark-subtle mt-4">
+            <div class="card bg-dark-subtle mt-5">
               <!-- Mapa -->
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.105917472263!2d-65.20974192473113!3d-26.836583276692668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1747083254731!5m2!1ses-419!2sar"
@@ -128,9 +128,20 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row d-flex justify-content-between">
-              <div class="col-md-6 text-center mt-3 card bg-danger text-white">
+          <div class="container mb-5 mt-3">
+            <div class=" d-flex justify-content-between  ">
+              <div
+                class=" text-center mt-2 card bg-danger text-white p-3 "
+              >
+                <h5 class="card-title">¿Por qué elegir CinePlus?</h5>
+                <p class="card-text">
+                  Con CinePlus, tendrás acceso a una amplia variedad de
+                  contenido, desde los últimos estrenos hasta clásicos
+                  atemporales, todo en un solo lugar. Nuestra plataforma está
+                  diseñada para ofrecerte una experiencia de visualización
+                  inigualable, con una interfaz intuitiva y fácil de usar.
+                </p>
+
                 <p class="card-text">
                   Disfruta de un catálogo infinito de películas, series,
                   documentales y estrenos exclusivos, todo en un solo lugar y
@@ -152,14 +163,14 @@
         <!--  lado derecho  -->
         <div class="col-md-6 col-sm-4 mt-5">
           <div>
-            <form class="d-flex flex-column mb-4 needs-validation" novalidate>
+            <form class="d-flex flex-column mb-4 needs-validation card" novalidate>
               <div class="container mb-3">
                 <label for="validationCustom01" class="form-label"
                   >First name</label
                 >
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control bg-dark-subtle"
                   id="validationCustom01"
                   placeholder="Nombre"
                   required
@@ -173,7 +184,7 @@
                 >
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control bg-dark-subtle"
                   id="validationCustom02"
                   placeholder="apellido"
                   required
@@ -188,7 +199,7 @@
                 <div class="input-group has-validation">
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control bg-dark-subtle"
                     id="validationCustomUsername"
                     aria-describedby="inputGroupPrepend"
                     required
@@ -203,7 +214,7 @@
                 <label for="validationCustom04" class="form-label"
                   >motivos</label
                 >
-                <select class="form-select" id="validationCustom04" required>
+                <select class="form-select bg-dark-subtle" id="validationCustom04" required>
                   <option selected disabled value="">Choose.</option>
                   <option>1</option>
                   <option>2</option>
@@ -212,18 +223,18 @@
                 </select>
                 <div class="invalid-feedback">Please select a valid state.</div>
               </div>
-              <div class="mb-3">
+              <div class="ms-2 mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label"
                   >Dejar un mensaje</label
                 >
                 <textarea
-                  class="form-control"
+                  class="form-control bg-dark-subtle"
                   id="exampleFormControlTextarea1"
                   rows="3"
                 ></textarea>
               </div>
 
-              <div class="container mb-3">
+              <div class="container d-flex justify-content-center align-items-center mb-3">
                 <button class="btn btn-danger" type="submit">
                   Submit form
                 </button>

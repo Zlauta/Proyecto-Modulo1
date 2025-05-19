@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
 }
-img {
+.fijo {
+  position: fixed;
+}
+.logoNav img {
   width: 100px;
   height: 100px;
 }
@@ -13,3 +16,5 @@ img {
 .boton {
   padding-right: 10px;
 }
+
+ 
