@@ -91,7 +91,7 @@
     <main>
       <section class="row m-0 p-0">
         <!-- lado izquierdo  -->
-        <section class="col-md-5 col-md-4">
+        <div class="col-md-5 col-md-4">
           <div class="container d-flex justify-content-center">
             <div class="card bg-dark-subtle mt-4">
               <!-- Mapa -->
@@ -148,81 +148,79 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <!--  lado derecho  -->
         <div class="col-md-6 col-sm-4 mt-5">
-          <div>
-            <form class="d-flex flex-column mb-4 needs-validation" novalidate>
-              <div class="container mb-3">
-                <label for="validationCustom01" class="form-label"
-                  >nombre</label
-                >
+          <div class="d-flex flex-column mb-4 needs-validation" novalidate>
+            <div class="container mb-3">
+              <label for="validationCustom01" class="form-label">nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                placeholder="Nombre"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="container mb-3">
+              <label for="validationCustom02" class="form-label"
+                >apellido</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom02"
+                placeholder="apellido"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="container mb-3">
+              <label for="validationCustomUsername" class="form-label"
+                >Email</label
+              >
+              <div class="input-group has-validation">
                 <input
-                  type="text"
+                  type="email"
                   class="form-control"
-                  id="validationCustom01"
-                  placeholder="Nombre"
+                  id="validationCustomUsername"
+                  aria-describedby="inputGroupPrepend"
                   required
                 />
-                <div class="valid-feedback">Looks good!</div>
-              </div>
-
-              <div class="container mb-3">
-                <label for="validationCustom02" class="form-label"
-                  >apellido</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationCustom02"
-                  placeholder="apellido"
-                  required
-                />
-                <div class="valid-feedback">Looks good!</div>
-              </div>
-
-              <div class="container mb-3">
-                <label for="validationCustomUsername" class="form-label"
-                  >Email</label
-                >
-                <div class="input-group has-validation">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="validationCustomUsername"
-                    aria-describedby="inputGroupPrepend"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Por favor ingrese un mail valido
-                  </div>
+                <div class="invalid-feedback">
+                  Por favor ingrese un mail valido
                 </div>
               </div>
+            </div>
 
-              <div class="container mb-3">
-                <label for="validationCustom04" class="form-label"
-                  >motivos</label
+            <div class="container mb-3">
+              <label for="validationCustom04" class="form-label">motivos</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose.</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+              <div class="invalid-feedback"></div>
+            </div>
+            <form class="was-validated">
+              <div class="mb-3">
+                <label for="validationTextarea" class="form-label"
+                  >dejar tu mensaje
+                </label>
+                <textarea
+                  class="form-control is-invalid"
+                  id="validationTextarea"
+                  placeholder="dejar un mensaje sobre la ap "
+                  required
                 >
-                <select class="form-select" id="validationCustom04" required>
-                  <option selected disabled value="">Choose.</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
-                <div class="invalid-feedback"></div>
+                </textarea>
+                <div class="invalid-feedback">dejar tu mensaje</div>
               </div>
-
-               <form class="was-validated">
-  <div class="mb-3">
-    <label for="validationTextarea" class="form-label">dejar tu  mensaje </label>
-    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="dejar un mensaje sobre la ap " required>
-    </textarea>
-    <div class="invalid-feedback">
-      dejar tu mensaje 
-    </div>
-  </div>
-
               <div class="container mb-3">
                 <button class="btn btn-danger" type="submit">
                   Submit form
@@ -234,7 +232,6 @@
       </section>
     </main>
     <!-- FOOTER DE PÁGINA -->
-    <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
