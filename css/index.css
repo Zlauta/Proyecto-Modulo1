@@ -62,10 +62,14 @@ svg text {
   background: none;
 }
 /* nav-bar */
+.ancho {
+  width: 50%;
+}
 .navbar {
   font-family: "Shojumaru", sans-serif;
 }
 .dropdown-menu {
+  height: 50px;
   background-color: rgb(115, 104, 104);
   color: white;
 }
@@ -365,9 +369,9 @@ footer {
   .contImg {
     width: 20% !important;
   }
-}
-@media (min-width: 768px) {
-  .nav-item {
-    justify-content: space-between;
+  .ancho {
+    width: 25%;
+    height: 100px;
   }
 }
+
