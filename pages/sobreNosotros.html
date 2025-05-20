@@ -103,11 +103,11 @@
                 </button>
               </li>
               <li class="nav-item ps-2">
-                <button
+                 <button
                   type="button"
                   class="btn btn-outline-danger"
                   data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  data-bs-target="#loginModal"
                 >
                   Acceso
                 </button>
@@ -648,6 +648,91 @@
                 </article>
               </div>
             </section>
+          </div>
+        </div>
+      </section>
+      <!-- Modal de Login -->
+       <section
+        class="modal fade generalModalbg"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal modal-dialog-centered">
+          <div class="modal-content text-white modal-body">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                One Play Group
+              </h1>
+              <div class="closeButtonModal"></div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="modal-body  pe-4 ps-4 d-flex flex-column align-items-center"
+            >
+              <!-- LOGO DE USUARIO -->
+              <div class="imgLogin d-flex justify-content-center">
+                <img
+                  class="imgUserLogo w-50 py-4 "
+                  src="../images/user.png"
+                  alt="Logo de usuario"
+                />
+              </div>
+              <!-- FORMULARIO DE LOGIN -->
+              <!-- CORREO -->
+              <form  class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="emailValidation" class="needs-validation form-label" value="Mark"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control  needs-validation"
+                    id="emailValidation"
+                    placeholder="nombre@ejemplo.com"
+                    required=""
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="invalid-feedback">Ingrese un correo valido.</div>
+                <div class="valid-feedback">Perfecto!</div>
+                <!-- PASSWORD -->
+                <div
+                  data-mdb-input-init
+                  class="form-outline mb-3 position-relative"
+                >
+                  <label class="form-label" for="passwordValidation"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    id="passwordValidation"
+                    class="form-control position-relative"
+                    placeholder="Contraseña"
+                    required
+                  />
+                  <button
+                    class="btn btn-sm position-absolute top-50 end-0 translate-middle-y me-2 mt-3"
+                  >
+                  </button>
+                </div>
+                <!-- BOTÓN DE CONFIRMACION -->
+                <button type="submit" class="btn btn-outline-primary w-75 mt-auto">
+                  Ingresar
+                </button>
+              </form>
+              <!-- Planes -->
+              <div class="d-flex flex-column mt-4"> Aún no tienes cuenta?
+                <p>Hecha un vistazo a <button class="btn btn-outline-warning" data-bs-toggle="modal"
+                  data-bs-target="#planModal" >nuestros planes</button></p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
