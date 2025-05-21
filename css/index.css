@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Shojumaru&display=swap");
 
 :root {
@@ -62,16 +63,31 @@ svg text {
   background: none;
 }
 /* nav-bar */
+.ancho {
+  width: 50%;
+}
 .navbar {
   font-family: "Shojumaru", sans-serif;
 }
 .dropdown-menu {
+  height: 50px;
   background-color: rgb(115, 104, 104);
   color: white;
 }
 /* ---------- */
 
 /* portada */
+#carouselExampleSlidesOnly {
+  a {
+    font-family: "Shojumaru", sans-serif;
+  }
+  p {
+    font-family: "Shojumaru", sans-serif;
+  }
+  h4 {
+    font-family: "Shojumaru", sans-serif;
+  }
+}
 .carousel-item {
   img {
     border: 1px solid rgba(255, 255, 255, 0.459);
@@ -80,47 +96,28 @@ svg text {
 }
 /* grilla de peliculas destacadas */
 
+.grillaPd {
+  h2 {
+    font-family: "Shojumaru", sans-serif;
+  }
+}
 .contImg {
-  width: 40% !important;
+  padding: 10px 15%;
+  a {
+    height: 100%;
+  }
 }
 
 /* carrusel de categorias */
-.contendorCarrusel {
-  width: 98vw;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
-  margin: 50px 0 50px 6px;
-}
-.funcionCarrusel {
-  display: flex;
-  min-width: calc(270px * 12);
-  animation: carrusel 20s linear infinite;
-}
-.funcionCarrusel:hover {
-  animation-play-state: paused;
-}
-.tarjetaCarusel {
-  width: 250px;
-  height: auto;
-  margin-left: 20px;
-
-  img {
-    width: 250px;
-    object-fit: cover;
-    transition: all 0.5s ease-in;
+.carrusel {
+  p {
+    font-family: "Shojumaru", sans-serif;
   }
-  img:hover {
-    transform: translateY(30px) scale(1.1);
-    z-index: 5;
+  h2 {
+    font-family: "Shojumaru", sans-serif;
   }
-}
-@keyframes carrusel {
-  0% {
-    transform: translateX(calc(270px * -6));
-  }
-  100% {
-    transform: translateX(0);
+  h4 {
+    font-family: "Shojumaru", sans-serif;
   }
 }
 /* KEYFRAMES DE MODALES */
@@ -349,7 +346,7 @@ footer {
     }
   }
   .contImg {
-    width: 25% !important;
+    padding: 15px;
   }
 }
 
@@ -363,11 +360,11 @@ footer {
     }
   }
   .contImg {
-    width: 20% !important;
+    padding: 10px 30px;
+  }
+  .ancho {
+    width: 25%;
+    height: 100px;
   }
 }
-@media (min-width: 768px) {
-  .nav-item {
-    justify-content: space-between;
-  }
-}
+
