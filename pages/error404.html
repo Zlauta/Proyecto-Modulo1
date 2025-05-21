@@ -11,15 +11,23 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/previews/000/582/341/original/play-icon-vector-illustration.jpg"
+      type="image/x-icon"
+    />
     <style>
       body {
         margin: 0;
-        background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000000 100%);
+        background: radial-gradient(
+          ellipse at bottom,
+          #0d1b2a 0%,
+          #000000 100%
+        );
         background-size: cover;
         background-repeat: no-repeat;
         color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         overflow: hidden;
       }
 
@@ -27,7 +35,9 @@
         position: fixed;
         width: 100%;
         height: 100%;
-        background: transparent url('https://cdn.pixabay.com/photo/2013/07/12/15/55/stars-150904_1280.png') repeat top center;
+        background: transparent
+          url("https://cdn.pixabay.com/photo/2013/07/12/15/55/stars-150904_1280.png")
+          repeat top center;
         background-size: contain;
         z-index: 0;
         animation: moveStars 200s linear infinite;
@@ -35,13 +45,22 @@
       }
 
       @keyframes moveStars {
-        from { background-position: 0 0; }
-        to { background-position: 10000px 10000px; }
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 10000px 10000px;
+        }
       }
 
       @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-15px); }
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
       }
 
       .error-container {
@@ -87,10 +106,11 @@
         <p>Este astronauta se perdió en el espacio... y vos también 🚀</p>
 
         <div class="astronaut">
-          <img src="../images/astronauta.svg" alt="">
-          
+          <img src="../images/astronauta.svg" alt="astronauta" />
         </div>
-        <a href="index.html" class="btn btn-primary btn-home mt-3">Volver al inicio</a>
+        <a href="index.html" class="btn btn-primary btn-home mt-3"
+          >Volver al inicio</a
+        >
       </div>
     </main>
 
