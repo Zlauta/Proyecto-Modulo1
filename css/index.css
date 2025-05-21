@@ -1,79 +1,123 @@
 
-
 @import url("https://fonts.googleapis.com/css2?family=Shojumaru&display=swap");
+
 :root {
   --principal-bg: linear-gradient(45deg, orange, rgb(25, 19, 0), black);
   --sombras-text: 1px 1px 3px rgb(250, 174, 33);
+  --modalbg: linear-gradient(
+    125deg,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 14, 81, 0.832) 50%,
+    rgb(0, 0, 0) 100%
+  );
 }
 * {
   margin: 0;
   padding: 0;
 }
-img {
-  width: 100px;
-  height: 100px;
+
+body {
+  background: var(--principal-bg);
+  text-shadow: var(--sombras-text);
+}
+/* Logo de navbar */
+svg {
+  font-family: "Shojumaru", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+svg text {
+  animation: stroke 4s infinite alternate;
+  stroke-width: 2;
+  stroke: #d10000;
+  font-size: 25px;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(11, 0, 79, 0);
+    stroke: rgba(160, 0, 0, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+    filter: drop-shadow(0 0 10px rgba(24, 220, 255, 0));
+  }
+  70% {
+    fill: rgba(11, 0, 79, 0);
+    stroke: rgba(160, 0, 0, 1);
+  }
+  80% {
+    fill: rgba(255, 0, 0, 1);
+    stroke: rgba(235, 111, 16, 1);
+    stroke-width: 3;
+  }
+
+  100% {
+    fill: rgba(11, 0, 79, 1);
+    stroke: rgba(160, 0, 0, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+.wrapper {
+  background: none;
+}
+/* nav-bar */
+.ancho {
+  width: 50%;
+}
+.navbar {
+  font-family: "Shojumaru", sans-serif;
 }
 .dropdown-menu {
+  height: 50px;
   background-color: rgb(115, 104, 104);
   color: white;
 }
-.boton {
-  padding-right: 10px;
-}
+/* ---------- */
 
-body {
-  background: #000000;
-  background: linear-gradient(
-    140deg,
-    rgb(0, 0, 0, 1) 0%,
-    rgb(223, 0, 0) 50%,
-    rgb(0, 0, 0, 1) 100%
-  );
-}
 /* portada */
+#carouselExampleSlidesOnly {
+  a {
+    font-family: "Shojumaru", sans-serif;
+  }
+  p {
+    font-family: "Shojumaru", sans-serif;
+  }
+  h4 {
+    font-family: "Shojumaru", sans-serif;
+  }
+}
 .carousel-item {
   img {
     border: 1px solid rgba(255, 255, 255, 0.459);
+    height: 250px;
+  }
+}
+/* grilla de peliculas destacadas */
+
+.grillaPd {
+  h2 {
+    font-family: "Shojumaru", sans-serif;
+  }
+}
+.contImg {
+  padding: 10px 15%;
+  a {
+    height: 100%;
   }
 }
 
 /* carrusel de categorias */
-.contendorCarrusel {
-  width: 98vw;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
-  margin: 50px 0 50px 6px;
-}
-.funcionCarrusel {
-  display: flex;
-  min-width: calc(270px * 12);
-  animation: carrusel 20s linear infinite;
-}
-.funcionCarrusel:hover {
-  animation-play-state: paused;
-}
-.tarjetaCarusel {
-  width: 250px;
-  height: auto;
-  margin-left: 20px;
-
-  img {
-    width: 250px;
-    object-fit: cover;
-    transition: all 0.5s ease-in;
+.carrusel {
+  p {
+    font-family: "Shojumaru", sans-serif;
   }
-  img:hover {
-    transform: translateY(30px) scale(1.1);
-    z-index: 5;
+  h2 {
+    font-family: "Shojumaru", sans-serif;
   }
-}
-@keyframes carrusel {
-  0% {
-    transform: translateX(calc(270px * -6));
-  }
-  100% {
-    transform: translateX(0);
+  h4 {
+    font-family: "Shojumaru", sans-serif;
   }
 }
 /* KEYFRAMES DE MODALES */
@@ -173,6 +217,8 @@ body {
   backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.75);
   height: 100%;
+  font-family: "Shojumaru", sans-serif;
+  color: gainsboro;
 }
 .cardAnimada {
   animation: wobble 1s ease 500ms 1 normal;
@@ -201,26 +247,124 @@ body {
   display: flex;
 }
 
+/* About Us Estilos */
+.bgCartas {
+  background: var(--modalbg);
+}
+.flip-container {
+  perspective: 1000px;
+  width: 300px;
+  height: 100%;
+  margin: 1rem auto;
+}
+
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 382px;
+  transition: transform 0.8s ease-out;
+  transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-card {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.flip-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  /* background-color: #f8f9fa; */
+  box-shadow: 9px 9px 9px rgba(255, 177, 22, 0.689);
+}
+
+.flip-back .card-img-top img {
+  width: 65%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.flip-front {
+  z-index: 2;
+}
+
+.flip-back {
+  background-color: var(--modalbg);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card-footer a {
+  margin: 0 5px;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-footer a:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+  background-color: var(--modalbg);
+  color: #fff;
+  text-decoration: none;
+}
+
+.flip-card:hover .flip-back h3,
+.flip-card:hover .flip-back h4 {
+  text-shadow: 0 0 8px #f90, 0 0 12px #f90, 0 0 18px #f90;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration-color: #f90;
+}
+.tituloIluminado {
+  transition: text-shadow 0.5s ease, color 0.5s ease;
+}
+
+footer {
+  font-family: "shojumaru", sans-serif;
+}
 /* medias query */
+
+@media (min-width: 768px) {
+  .carousel-item {
+    img {
+      height: 400px;
+    }
+  }
+  .contImg {
+    padding: 15px;
+  }
+}
+
 @media (min-width: 1024px) {
   .carousel-item {
     img {
-      height: 95vh;
+      height: 77vh;
     }
     h4 {
       font-size: 70px;
     }
   }
-}
-
-@media (max-width: 760px) {
-  .grillaPD {
-    img {
-      width: 100%;
-    }
-    div {
-      width: 80%;
-      margin-left: 20px;
-    }
+  .contImg {
+    padding: 10px 30px;
+  }
+  .ancho {
+    width: 25%;
+    height: 100px;
   }
 }
+

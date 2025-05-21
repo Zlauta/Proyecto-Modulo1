@@ -4,25 +4,828 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto modulo 1</title>
-    <link rel="stylesheet" href="css/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
     <!-- NAVBAR -->
-    <header></header>
+    <header id="Header" class="position-sticky sticky-top">
+      <nav class="navbar navbar-expand-xl navbar-dark bg-black">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="../index.html">
+              <div class="wrapper">
+                <svg>
+                  <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                    One Play Group
+                  </text>
+                </svg>
+              </div>
+            </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-danger" href="#"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../index.html">Terror</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html"
+                      >Comedia</a
+                    >
+                  </li>
+                   <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html">Accion</a>
+                  </li>
+                   <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html"
+                      >Aventuras</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-search me-3"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <!-- Botón para abrir el modal -->
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#planModal"
+                >
+                  Ver planes
+                </button>
+              </li>
+              <li class="nav-item ps-2">
+                 <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  Acceso
+                </button>
+              </li>
+              <!-- -------------------- -->
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- CONTENIDO PRINCIPAL -->
-    <main></main>
+    <main class="bg-transparent text-light">
+      <section class="row">
+        <!-- TARJETA DE LEANDRO -->
+        <div class="flip-container col-md-4">
+          <div class="flip-card">
+            <!-- Cara frontal -->
+            <div class="flip-face flip-front">
+              <div>
+                <img
+                  src="https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SVP/SVP_EN_106.png"
+                  class="w-100 h-100 mt-0 p-0"
+                  alt="Cara de carta"
+                />
+              </div>
+            </div>
+
+            <!-- Cara trasera -->
+            <div class="flip-face flip-back bgCartas">
+              <img
+                src="https://avatars.githubusercontent.com/u/123712000?v=4"
+                alt="Imagen de perfil"
+                class="w-50 rounded-4"
+              />
+              <h3 class="card-title tituloIluminado fs-5">Leandro Córdoba</h3>
+              <p class="card-text fs-6">
+                Fullstack developer.
+              </p>
+              <h4 class="card-title tituloIluminado fs-6">Redes / Contacto</h4>
+              <div class="row g-3 mt-2">
+                <div class="col">
+                  <a
+                    class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="https://github.com/LeanDevIV" target="_blank"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="https://www.linkedin.com/in/leandro-c%C3%B3rdoba/"
+                    target="_blank"
+                    ><i class="bi bi-linkedin"></i> LinkedIn</a
+                  >
+                </div>
+
+                <div class="col">
+                  <a
+                    class="btn btn-outline-info w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="mailto:leandrocordoba318@gmail.com"
+                    ><i class="bi bi-envelope"></i> Email
+                  </a>
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="https://www.instagram.com/leand_404/"
+                    target="_blank"
+                    ><i class="bi bi-instagram"></i> Instagram</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TARJETA DE ISAIAS -->
+        <div class="flip-container col-md-4">
+          <div class="flip-card">
+            <!-- Cara frontal -->
+            <div class="flip-face flip-front">
+              <div>
+                <img
+                  src="https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SWSHP/SWSHP_EN_SWSH015.png"
+                  class="w-100 h-100 mt-0 p-0"
+                  alt="Cara de carta"
+                />
+              </div>
+            </div>
+
+            <!-- Cara trasera -->
+            <div class="flip-face flip-back bgCartas">
+              <img
+                src="https://avatars.githubusercontent.com/u/199970736?v=4"
+                alt="Imagen de perfil"
+                class="w-50 rounded-4"
+              />
+              <h3 class="card-title tituloIluminado fs-5">Isaias Romano</h3>
+              <p class="card-text fs-6">
+                Fullstack developer.
+              </p>
+              <h4 class="card-title tituloIluminado fs-6">Redes / Contacto</h4>
+              <div class="row g-3 mt-2">
+                <div class="col">
+                  <a
+                    class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-linkedin"></i> LinkedIn</a
+                  >
+                </div>
+
+                <div class="col">
+                  <a
+                    class="btn btn-outline-info w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-envelope"></i> Email
+                  </a>
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-instagram"></i> Instagram</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TARJETA DE LAUTARO -->
+        <div class="flip-container col-md-4">
+          <div class="flip-card">
+            <!-- Cara frontal -->
+            <div class="flip-face flip-front">
+              <div>
+                <img
+                  src="https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/XYP/XYP_EN_XY24.png"
+                  class="w-100 h-100 mt-0 p-0"
+                  alt="Cara de carta"
+                />
+              </div>
+            </div>
+
+            <!-- Cara trasera -->
+            <div class="flip-face flip-back bgCartas">
+              <img
+                src="https://avatars.githubusercontent.com/u/209563070?v=4"
+                alt="Imagen de perfil"
+                class="w-50 rounded-4"
+              />
+              <h3 class="card-title tituloIluminado fs-5">Lautaro Zarate</h3>
+              <p class="card-text fs-6">
+                Fullstack developer. 
+              </p>
+              <h4 class="card-title tituloIluminado fs-6">Redes / Contacto</h4>
+              <div class="row g-3 mt-2">
+                <div class="col">
+                  <a
+                    class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-linkedin"></i> LinkedIn</a
+                  >
+                </div>
+
+                <div class="col">
+                  <a
+                    class="btn btn-outline-info w-100 d-flex align-items-center justify-content-center gap-1"
+                    target="_blank" 
+                    href="../pages/error404.html"
+                    ><i class="bi bi-envelope"></i> Email
+                  </a>
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-instagram"></i> Instagram</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <!-- TARJETA DE MELISA -->
+        <div class="flip-container col-md-4">
+          <div class="flip-card">
+            <!-- Cara frontal -->
+            <div class="flip-face flip-front">
+              <div>
+                <img
+                  src="https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SV05/SV05_EN_165.png"
+                  class="w-100 h-100 mt-0 p-0"
+                  alt="Cara de carta"
+                />
+              </div>
+            </div>
+
+            <!-- Cara trasera -->
+            <div class="flip-face flip-back bgCartas">
+              <img
+                src="https://avatars.githubusercontent.com/u/209854051?v=4"
+                alt="Imagen de perfil"
+                class="w-50 rounded-4"
+              />
+              <h3 class="card-title tituloIluminado fs-5">Melisa Jimenez</h3>
+              <p class="card-text fs-6">
+                Fullstack developer.
+              </p>
+              <h4 class="card-title tituloIluminado fs-6">Redes / Contacto</h4>
+              <div class="row g-3 mt-2">
+                <div class="col">
+                  <a
+                    class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-linkedin"></i> LinkedIn</a
+                  >
+                </div>
+
+                <div class="col">
+                  <a
+                    class="btn btn-outline-info w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-envelope"></i> Email
+                  </a>
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-instagram"></i> Instagram</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TARJETA DE NADIA -->
+        <div class="flip-container col-md-4">
+          <div class="flip-card">
+            <!-- Cara frontal -->
+            <div class="flip-face flip-front">
+              <div>
+                <img
+                  src="https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SV02/SV02_EN_262.png"
+                  class="w-100 h-100 mt-0 p-0"
+                  alt="Cara de carta"
+                />
+              </div>
+            </div>
+
+            <!-- Cara trasera -->
+            <div class="flip-face flip-back bgCartas">
+              <img
+                src="https://avatars.githubusercontent.com/u/207631017?v=4"
+                alt="Imagen de perfil"
+                class="w-50 rounded-4"
+              />
+              <h3 class="card-title tituloIluminado fs-5">Nadia Medina</h3>
+              <p class="card-text fs-6">
+                Fullstack developer.
+              </p>
+              <h4 class="card-title tituloIluminado fs-6">Redes / Contacto</h4>
+              <div class="row g-3 mt-2">
+                <div class="col">
+                  <a
+                    class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-linkedin"></i> LinkedIn</a
+                  >
+                </div>
+
+                <div class="col">
+                  <a
+                    class="btn btn-outline-info w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-envelope"></i> Email
+                  </a>
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-instagram"></i> Instagram</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TARJETA DE ALVARO -->
+        <div class="flip-container col-md-4">
+          <div class="flip-card">
+            <!-- Cara frontal -->
+            <div class="flip-face flip-front">
+              <div>
+                <img
+                  src="https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SV6PT5/SV6PT5_EN_75.png"
+                  class="w-100 h-100 mt-0 p-0"
+                  alt="Cara de carta"
+                />
+              </div>
+            </div>
+
+            <!-- Cara trasera -->
+            <div class="flip-face flip-back bgCartas">
+              <!-- actualizar -->
+              <img
+                src="https://img.icons8.com/?size=100&id=23264&format=png&color=000000"
+                alt="Imagen de perfil"
+                class="w-50 rounded-4"
+              />
+              <h3 class="card-title tituloIluminado fs-5">Alvaro</h3>
+              <p class="card-text fs-6">
+                Fullstack developer.
+              </p>
+              <h4 class="card-title tituloIluminado fs-6">Redes / Contacto</h4>
+              <div class="row g-3 mt-2">
+                <div class="col">
+                  <a
+                    class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-linkedin"></i> LinkedIn</a
+                  >
+                </div>
+
+                <div class="col">
+                  <a
+                    class="btn btn-outline-info w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-envelope"></i> Email
+                  </a>
+                </div>
+                <div class="col">
+                  <a
+                    class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center gap-1"
+                    href="../pages/error404.html"
+                    target="_blank"
+                    ><i class="bi bi-instagram"></i> Instagram</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL DE SUSCRIPCION Y LOGIN -->
+      <section
+        class="modal fade generalModalbg"
+        id="planModal"
+        tabindex="-1"
+        aria-labelledby="planModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content text-white bg-transparent">
+            <!--Body de modal  -->
+            <section class="modal-body pe-4 ps-4">
+              <div class="closeButtonModal d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-outline-warning mb-3 bi bi-x"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+              <div class="row mt-3">
+                <!-- Estándar -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="modalCard card border-white text-white w-100 d-flex flex-column h-100 cardAnimada"
+                  >
+                    <div
+                      class="card-body p-2 d-flex flex-column modalCardInner"
+                    >
+                      <h5 class="card-title mt-3 text-center mb-5">Estándar</h5>
+                      <p class="card-text mb-5">
+                        Disfrutá de contenido en calidad estándar sin
+                        interrupciones.
+                      </p>
+                      <ul class="list-unstyled mb-5">
+                        <li>
+                          <i class="bi bi-patch-check text-primary"></i>
+                          Resolución hasta 720p
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-primary"></i> 1
+                          dispositivo a la vez
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-primary"></i>
+                          Catálogo limitado
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-primary w-100 mt-auto">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Premium -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="card modalCard border-success text-white w-100 d-flex flex-column h-100 position-relative cardAnimada"
+                  >
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 ms-0"
+                      >Más popular</span
+                    >
+                    <div
+                      class="card-body modalCardInner p-2 d-flex flex-column"
+                    >
+                      <h5 class="card-title mt-3 text-success text-center mb-5">
+                        Premium
+                      </h5>
+                      <p class="card-text mb-5">
+                        Ideal para familias o usuarios exigentes. Más calidad,
+                        más dispositivos.
+                      </p>
+                      <ul class="list-unstyled mb-5">
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Resolución hasta 1080p
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i> Hasta 3
+                          dispositivos
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Catálogo completo
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Descargas offline
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-success w-100 mt-auto">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Deluxe -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="card modalCard border-warning text-white w-100 d-flex flex-column h-100 cardAnimada"
+                  >
+                    <div
+                      class="card-body modalCardInner p-2 d-flex flex-column"
+                    >
+                      <h5 class="card-title mt-3 text-warning text-center mb-5">
+                        Deluxe
+                      </h5>
+                      <p class="card-text mb-5">
+                        La experiencia definitiva. Lo mejor de lo mejor, sin
+                        límites.
+                      </p>
+                      <ul class="list-unstyled mb-5">
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Resolución 4K + HDR
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Dispositivos ilimitados
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Catálogo exclusivo y estrenos anticipados
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Soporte prioritario 24/7
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-warning w-100 mt-auto">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Modal de Login -->
+       <section
+        class="modal fade generalModalbg"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal modal-dialog-centered">
+          <div class="modal-content text-white modal-body">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                One Play Group
+              </h1>
+              <div class="closeButtonModal"></div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="modal-body  pe-4 ps-4 d-flex flex-column align-items-center"
+            >
+              <!-- LOGO DE USUARIO -->
+              <div class="imgLogin d-flex justify-content-center">
+                <img
+                  class="imgUserLogo w-50 py-4 "
+                  src="../images/user.png"
+                  alt="Logo de usuario"
+                />
+              </div>
+              <!-- FORMULARIO DE LOGIN -->
+              <!-- CORREO -->
+              <form  class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="emailValidation" class="needs-validation form-label" value="Mark"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control  needs-validation"
+                    id="emailValidation"
+                    placeholder="nombre@ejemplo.com"
+                    required=""
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="invalid-feedback">Ingrese un correo valido.</div>
+                <div class="valid-feedback">Perfecto!</div>
+                <!-- PASSWORD -->
+                <div
+                  data-mdb-input-init
+                  class="form-outline mb-3 position-relative"
+                >
+                  <label class="form-label" for="passwordValidation"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    id="passwordValidation"
+                    class="form-control position-relative"
+                    placeholder="Contraseña"
+                    required
+                  />
+                  <button
+                    class="btn btn-sm position-absolute top-50 end-0 translate-middle-y me-2 mt-3"
+                  >
+                  </button>
+                </div>
+                <!-- BOTÓN DE CONFIRMACION -->
+                <button type="submit" class="btn btn-outline-primary w-75 mt-auto">
+                  Ingresar
+                </button>
+              </form>
+              <!-- Planes -->
+              <div class="d-flex flex-column mt-4"> Aún no tienes cuenta?
+                <p>Hecha un vistazo a <button class="btn btn-outline-warning" data-bs-toggle="modal"
+                  data-bs-target="#planModal" >nuestros planes</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- FOOTER DE PÁGINA -->
-    <footer></footer>
+   <footer>
+      <section class="d-flex flex-column flex-md-row bg-dark text-white">
+        <!-- Sección 1 -->
+        <a
+          href="../index.html"
+          class="d-flex flex-column align-items-center justify-content-center w-75 p-4 flex-fill"
+        >
+          <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+              One Play Group
+            </text>
+          </svg>
+        </a>
+
+        <!-- Sección 2 -->
+        <div
+          class="d-flex flex-column align-items-center justify-content-center p-4 flex-fill text-center w-75"
+        >
+          <h5 class="card-title">Proyecto Módulo 1</h5>
+          <p class="card-text">
+            One Play Group es tu nueva plataforma de streaming, con estrenos
+            exclusivos, clásicos remasterizados y contenido original para todos
+            los gustos.
+          </p>
+        </div>
+
+        <!-- Sección 3 -->
+        <div
+          class="d-flex flex-wrap p-4 flex-fill justify-content-center align-items-center gap-2 w-75"
+        >
+          <a
+            class="btn btn-outline-secondary d-flex align-items-center gap-1"
+            href="https://github.com/Zlauta/Proyecto-Modulo1"
+            target="_blank"
+          >
+            <i class="bi bi-github"></i> GitHub
+          </a>
+          <a
+            class="btn btn-outline-primary d-flex align-items-center gap-1"
+            href="https://trello.com/b/gtJ5fzI9/proyecto-modulo-1-rc"
+            target="_blank"
+          >
+            <i class="bi bi-trello"></i> Trello
+          </a>
+          <a
+            class="btn btn-outline-info d-flex align-items-center gap-1"
+            href="../pages/error404.html"
+          >
+            <i class="bi bi-envelope"></i> Contacto
+          </a>
+          <a
+            class="btn btn-outline-danger d-flex align-items-center gap-1"
+            href="../pages/sobreNosotros.html"
+          >
+            <i class="bi bi-info-circle"></i> About Us
+          </a>
+        </div>
+      </section>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <!-- Script del modal de bootstrap -->
+      <script>
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
