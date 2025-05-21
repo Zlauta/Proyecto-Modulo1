@@ -1,0 +1,12 @@
+body{
+    color: white;
+}
+
+.mapa{
+
+    width: 95%;
+}
+    
+.notas:hover{
+    color: red;
+}

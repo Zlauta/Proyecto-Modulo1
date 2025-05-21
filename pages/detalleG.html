@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto modulo 1</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/detalles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header id="Header" class="position-sticky sticky-top">
+      <nav class="navbar navbar-expand-xl navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <div class="wrapper">
+              <svg>
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                  One Play Group
+                </text>
+              </svg>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobreNosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../index.html">Terror</a>
+                  </li>
+
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html">Comedia</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+
+                  <li>
+                    <a class="dropdown-item" href="../index.html">Accion</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html">Aventuras</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-danger" href="./error404.html">
+                  <i class="bi bi-search me-3"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <!-- Botón para abrir el modal -->
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#planModal"
+                >
+                  Ver planes
+                </button>
+              </li>
+              <li class="nav-item ps-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  Acceso
+                </button>
+              </li>
+              <!-- -------------------- -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <section class="row m-0">
+        <div class="col-12 p-0">
+          <video autoplay="1" loop muted class="game object-fit-cover w-100">
+            <source src="../images/gameofthrones.mp4" />
+          </video>
+          <div class="tituloEpisodio col-12 d-flex flex-column">
+            <h2 class="titulo">Game Of Thrones</h2>
+            <a href="" class="boton p-2 w-75 rounded-2 text-decoration-none">
+              <i class="bi bi-play-fill"></i> <strong>Reproducir</strong> Ep 1
+            </a>
+          </div>
+          <div
+            class="cajaElementos d-flex justify-content-center my-2 my-md-4 my-lg-5 gap-4"
+          >
+            <p class="like btn btn-danger px-2">
+              <i class="bi bi-hand-thumbs-up"></i>
+            </p>
+            <p class="dislike btn btn-danger px-2">
+              <i class="bi bi-hand-thumbs-down"></i>
+            </p>
+            <p class="descarga btn btn-danger px-2">
+              <i class="bi bi-arrow-down-square"></i>
+            </p>
+            <p class="agregar btn btn-danger px-2">
+              <i class="bi bi-plus-circle"></i>
+            </p>
+          </div>
+        </div>
+        <!-- descripcion de la serie -->
+        <div class="desc">
+          <p class="text-light text-center">
+            Drama | Fantasia | Intriga | 8 Temporadas
+          </p>
+          <p class="text-light text-center">
+            <strong>Duración:</strong> 50–80 minutos
+          </p>
+          <p class="text-light text-center"><strong>Episodios:</strong> 73</p>
+          <p class="text-center text-light">
+            <strong>Clasificación:</strong> +18
+          </p>
+          <p class="text-center text-light p-4">
+            En un mundo donde las estaciones duran años y las traiciones están a
+            la orden del día, varias casas nobles luchan por el control del
+            Trono de Hierro. Mientras los conflictos políticos dividen a los
+            reinos, una amenaza ancestral despierta más allá del Muro. Basada en
+            la saga literaria de George R. R. Martin, Game of Thrones es una
+            épica historia de poder, lealtad y supervivencia que ha cautivado al
+            mundo entero.
+          </p>
+        </div>
+      </section>
+      <section class="carrusel">
+        <h4 class="text-light text-center mb-5">
+          Sugerencias Que Quizas Te Gusten
+        </h4>
+        <div class="contendorCarusel">
+          <div class="funcionCarusel">
+            <div class="tarjetaCarrusel" style="--poscision: 1">
+              <a href="./error404.html"
+                ><img
+                  src="https://mooviehd.net/wp-content/uploads/2023/06/uZsV5ZIZQMHekWDQQMsBwN0C3yA.jpg"
+                  alt="portada de the witcher"
+              /></a>
+            </div>
+            <div class="tarjetaCarrusel" style="--poscision: 2">
+              <a href="./error404.html"
+                ><img
+                  src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/08/House-of-the-Dragon-New-Poster.jpg"
+                  alt="portada de house of the dragon"
+              /></a>
+            </div>
+            <div class="tarjetaCarrusel" style="--poscision: 3">
+              <a href="./error404.html"
+                ><img
+                  src="https://images.justwatch.com/poster/10243426/s718/temporada-1.%7Bformat%7D"
+                  alt="portada de vikings"
+              /></a>
+            </div>
+            <div class="tarjetaCarrusel" style="--poscision: 4">
+              <a href="./error404.html"
+                ><img
+                  src="https://images.justwatch.com/poster/290556794/s718/temporada-5.%7Bformat%7D"
+                  alt="portada de the last kingdom"
+              /></a>
+            </div>
+            <div class="tarjetaCarrusel" style="--poscision: 5">
+              <a href="./error404.html"
+                ><img
+                  src="https://th.bing.com/th/id/R.be490115e398d470e86790805a4e0cf4?rik=NJ912l8fESTixw&riu=http%3a%2f%2fimages4.fanpop.com%2fimage%2fphotos%2f14800000%2fRome-Poster-rome-14832925-936-1298.jpg&ehk=m1YN1tPPFUP6BEkZlJdzedCkwIRayfXICdUAnCP21BI%3d&risl=&pid=ImgRaw&r=0"
+                  alt="portada de rome"
+              /></a>
+            </div>
+            <div class="tarjetaCarrusel" style="--poscision: 6">
+              <a href="./error404.html"
+                ><img
+                  src="https://tse4.mm.bing.net/th/id/OIP.zkj3Jbh-ocQVEhdsu8_UTQHaK-?cb=iwc2&w=729&h=1080&rs=1&pid=ImgDetMain"
+                  alt="portada de shadow and bone"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="carrusel">
+        <h4 class="text-light text-center mb-5">En Tendencia</h4>
+        <div class="contendorCarusel mt-4">
+          <div class="funcionCarusel">
+            <div class="tarjetaCarrusel" style="--poscision: 1">
+              <a href="./error404.html"
+                ><img
+                  src="https://th.bing.com/th/id/R.0cec6b9504a31a08a33a6b75cc076b51?rik=zxrfECUA1mEZPQ&riu=http%3a%2f%2fimages.china.cn%2fsite1007%2f2025-02%2f05%2f117696445_84f2966d-babd-4dba-b449-8e8b96c59560.jpg&ehk=qwftiXUGk7142pJCrGPfGjZyZEN6jy5eHCAA5X%2fNBtA%3d&risl=&pid=ImgRaw&r=0"
+                  alt="portada de Ne zha 2"
+              /></a>
+            </div>
+            <div class="tarjetaCarrusel" style="--poscision: 2">
+              <a href="./error404.html"
+                ><img
+                  src="https://tse4.mm.bing.net/th/id/OIP.nq3Ig1z1NOKCLlOhZoeRkwHaLD?cb=iwc2&rs=1&pid=ImgDetMain"
+                  alt="portada de captain american brave new world"
+              /></a>
+            </div>
+            <div class="tarjetaCarrusel" style="--poscision: 3">
+              <a href="./error404.html"
+                ><img
+                  src="https://tse3.mm.bing.net/th/id/OIP.7bcWhoaGvWtplLBCr9dlCwHaLH?cb=iwc2&rs=1&pid=ImgDetMain"
+                  alt="portada de the brutalist"
+              /></a>
+            </div>
+            <div class="tarjetaCarrusel" style="--poscision: 4">
+              <a href="./error404.html"
+                ><img
+                  src="https://tse2.mm.bing.net/th/id/OIP.p6lz_EgguOPVtS857BxFLQHaLH?cb=iwc2&rs=1&pid=ImgDetMain"
+                  alt="portada de el eternauta"
+              /></a>
+            </div>
+            <div class="tarjetaCarrusel" style="--poscision: 5">
+              <a href="./error404.html"
+                ><img
+                  src="https://ep01.epimg.net/estaticos/2017/04/alien/img/carteles/2017-alien-covenant.jpeg"
+                  alt="portada de alien planeta tierra"
+              /></a>
+            </div>
+            <div class="tarjetaCarrusel" style="--poscision: 6">
+              <a href="./error404.html"
+                ><img
+                  src="https://cdn.pixabay.com/photo/2017/08/28/00/02/daredevil-2688078_1280.jpg"
+                  alt="portada de daredevil born again"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL DE SUSCRIPCION Y LOGIN -->
+      <section
+        class="modal fade generalModalbg"
+        id="planModal"
+        tabindex="-1"
+        aria-labelledby="planModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content text-white bg-transparent">
+            <!--Body de modal  -->
+            <section class="modal-body pe-4 ps-4">
+              <div class="closeButtonModal d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-outline-warning mb-3 bi bi-x"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+              <div class="row mt-3">
+                <!-- Estándar -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="modalCard card border-white text-white w-100 d-flex flex-column h-100 cardAnimada"
+                  >
+                    <div
+                      class="card-body p-2 d-flex flex-column modalCardInner"
+                    >
+                      <h5 class="card-title mt-3 text-center mb-5">Estándar</h5>
+                      <p class="card-text mb-5">
+                        Disfrutá de contenido en calidad estándar sin
+                        interrupciones.
+                      </p>
+                      <ul class="list-unstyled mb-5">
+                        <li>
+                          <i class="bi bi-patch-check text-primary"></i>
+                          Resolución hasta 720p
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-primary"></i> 1
+                          dispositivo a la vez
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-primary"></i>
+                          Catálogo limitado
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-primary w-100 mt-auto">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Premium -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="card modalCard border-success text-white w-100 d-flex flex-column h-100 position-relative cardAnimada"
+                  >
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 ms-0"
+                      >Más popular</span
+                    >
+                    <div
+                      class="card-body modalCardInner p-2 d-flex flex-column"
+                    >
+                      <h5 class="card-title mt-3 text-success text-center mb-5">
+                        Premium
+                      </h5>
+                      <p class="card-text mb-5">
+                        Ideal para familias o usuarios exigentes. Más calidad,
+                        más dispositivos.
+                      </p>
+                      <ul class="list-unstyled mb-5">
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Resolución hasta 1080p
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i> Hasta 3
+                          dispositivos
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Catálogo completo
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-success"></i>
+                          Descargas offline
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-success w-100 mt-auto">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Deluxe -->
+                <article class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+                  <div
+                    class="card modalCard border-warning text-white w-100 d-flex flex-column h-100 cardAnimada"
+                  >
+                    <div
+                      class="card-body modalCardInner p-2 d-flex flex-column"
+                    >
+                      <h5 class="card-title mt-3 text-warning text-center mb-5">
+                        Deluxe
+                      </h5>
+                      <p class="card-text mb-5">
+                        La experiencia definitiva. Lo mejor de lo mejor, sin
+                        límites.
+                      </p>
+                      <ul class="list-unstyled mb-5">
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Resolución 4K + HDR
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Dispositivos ilimitados
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Catálogo exclusivo y estrenos anticipados
+                        </li>
+                        <li>
+                          <i class="bi bi-patch-check text-warning"></i>
+                          Soporte prioritario 24/7
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-warning w-100 mt-auto">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER DE PÁGINA -->
+    <footer>
+      <section class="d-flex flex-column flex-md-row bg-dark text-white">
+        <!-- Sección 1 -->
+        <a
+          href="../index.html"
+          class="d-flex flex-column align-items-center justify-content-center w-75 p-4 flex-fill"
+        >
+          <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+              One Play Group
+            </text>
+          </svg>
+        </a>
+
+        <!-- Sección 2 -->
+        <div
+          class="d-flex flex-column align-items-center justify-content-center p-4 flex-fill text-center w-75"
+        >
+          <h5 class="card-title">Proyecto Módulo 1</h5>
+          <p class="card-text">
+            One Play Group es tu nueva plataforma de streaming, con estrenos
+            exclusivos, clásicos remasterizados y contenido original para todos
+            los gustos.
+          </p>
+        </div>
+
+        <!-- Sección 3 -->
+        <div
+          class="d-flex flex-wrap p-4 flex-fill justify-content-center align-items-center gap-2 w-75"
+        >
+          <a
+            class="btn btn-outline-secondary d-flex align-items-center gap-1"
+            href="https://github.com/Zlauta/Proyecto-Modulo1"
+            target="_blank"
+          >
+            <i class="bi bi-github"></i> GitHub
+          </a>
+          <a
+            class="btn btn-outline-primary d-flex align-items-center gap-1"
+            href="https://trello.com/b/gtJ5fzI9/proyecto-modulo-1-rc"
+            target="_blank"
+          >
+            <i class="bi bi-trello"></i> Trello
+          </a>
+          <a
+            class="btn btn-outline-info d-flex align-items-center gap-1"
+            href="../pages/error404.html"
+          >
+            <i class="bi bi-envelope"></i> Contacto
+          </a>
+          <a
+            class="btn btn-outline-danger d-flex align-items-center gap-1"
+            href="../pages/sobreNosotros.html"
+          >
+            <i class="bi bi-info-circle"></i> About Us
+          </a>
+        </div>
+      </section>
+      <!-- Modal de Login -->
+       <section
+        class="modal fade generalModalbg"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal modal-dialog-centered">
+          <div class="modal-content text-white modal-body">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                One Play Group
+              </h1>
+              <div class="closeButtonModal"></div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="modal-body  pe-4 ps-4 d-flex flex-column align-items-center"
+            >
+              <!-- LOGO DE USUARIO -->
+              <div class="imgLogin d-flex justify-content-center">
+                <img
+                  class="imgUserLogo w-50 py-4 "
+                  src="../images/user.png"
+                  alt="Logo de usuario"
+                />
+              </div>
+              <!-- FORMULARIO DE LOGIN -->
+              <!-- CORREO -->
+              <form  class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="emailValidation" class="needs-validation form-label" value="Mark"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control  needs-validation"
+                    id="emailValidation"
+                    placeholder="nombre@ejemplo.com"
+                    required=""
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="invalid-feedback">Ingrese un correo valido.</div>
+                <div class="valid-feedback">Perfecto!</div>
+                <!-- PASSWORD -->
+                <div
+                  data-mdb-input-init
+                  class="form-outline mb-3 position-relative"
+                >
+                  <label class="form-label" for="passwordValidation"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    id="passwordValidation"
+                    class="form-control position-relative"
+                    placeholder="Contraseña"
+                    required
+                  />
+                  <button
+                    class="btn btn-sm position-absolute top-50 end-0 translate-middle-y me-2 mt-3"
+                  >
+                  </button>
+                </div>
+                <!-- BOTÓN DE CONFIRMACION -->
+                <button type="submit" class="btn btn-outline-primary w-75 mt-auto">
+                  Ingresar
+                </button>
+              </form>
+              <!-- Planes -->
+              <div class="d-flex flex-column mt-4"> Aún no tienes cuenta?
+                <p>Hecha un vistazo a <button class="btn btn-outline-warning" data-bs-toggle="modal"
+                  data-bs-target="#planModal" >nuestros planes</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script del modal de bootstrap -->
+      <script>
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
